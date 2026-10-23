@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Imran Rasheed | Full-Stack Software Engineer & Architect</title>
+  <meta name="description" content="Official portfolio of Muhammad Imran Rasheed - Senior Full-Stack Software Engineer, Digital Solutions Architect, and Web Developer. Black & Gold Premium Luxury Edition.">
+  <meta name="author" content="Muhammad Imran Rasheed">
+  <meta name="theme-color" content="#08080a">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Muhammad Imran Rasheed | Full-Stack Software Engineer">
+  <meta property="og:description" content="Crafting high-performance digital architectures, bespoke web applications, and intuitive user experiences.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow & Interactive Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-mid-right"></div>
+  <div class="ambient-glow glow-bottom-left"></div>
+
+  <!-- ========================================================================
+       NAVIGATION BAR
+       ======================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- Monogram Brand -->
+      <a href="#home" class="brand-logo" aria-label="Muhammad Imran Rasheed Home">
+        <div class="brand-crest">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 8L88 28V72L50 92L12 72V28L50 8Z" stroke="url(#navGold)" stroke-width="4"/>
+            <text x="50" y="62" font-family="'Cinzel', serif" font-size="34" font-weight="700" fill="url(#navGold)" text-anchor="middle">IR</text>
+            <defs>
+              <linearGradient id="navGold" x1="0" y1="0" x2="100" y2="100">
+                <stop offset="0%" stop-color="#FFF3B0"/>
+                <stop offset="50%" stop-color="#D4AF37"/>
+                <stop offset="100%" stop-color="#8C6514"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-name">
+          <span class="brand-title">Imran Rasheed</span>
+          <span class="brand-sub">Software Architect</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Button & Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-secondary btn-sm">
+          <span>Let's Talk</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         HERO SECTION
+         ======================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <div class="pulse-indicator"></div>
+            <span>Open for Select Projects & Roles</span>
+          </div>
+
+          <p class="hero-greeting">Welcome to my portfolio</p>
+          <h1 class="hero-name">
+            I am <span class="gold-text">Muhammad Imran Rasheed</span>
+          </h1>
+
+          <div class="hero-role">
+            <span>Full-Stack Software Engineer</span>
+            <span style="color: var(--gold-border);">✦</span>
+            <span class="role-highlight">Solutions Architect</span>
+          </div>
+
+          <p class="hero-description">
+            Architecting robust digital ecosystems, resilient cloud backends, and pixel-perfect web experiences. Combining rigorous software engineering principles with high-end luxury aesthetics to build products that scale seamlessly.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#services" class="btn btn-primary">
+              <span>Explore My Services</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+
+            <!-- Quick Email Copy Chip -->
+            <button class="quick-email-chip" data-copy-email aria-label="Copy Imran's Email Address">
+              <svg class="email-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span class="email-text">imranrasheedt@gmail.com</span>
+              <span class="copy-badge">Copy</span>
+            </button>
+          </div>
+
+          <!-- Hero Stats Grid -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="5" data-suffix="+">5+</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="60" data-suffix="+">60+</span>
+              <span class="stat-label">Delivered Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="99.8" data-suffix="%">99.8%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="24" data-suffix="/7">24/7</span>
+              <span class="stat-label">Reliable Availability</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Code Window Showcase -->
+        <div class="hero-visual">
+          <div class="hero-visual-wrapper">
+            <div class="visual-aura"></div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="badge-text">Ultra-Fast Performance</div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="badge-text">Enterprise Grade Security</div>
+            </div>
+
+            <!-- Interactive Code Window -->
+            <div class="code-window">
+              <div class="code-header">
+                <div class="window-dots">
+                  <span class="window-dot dot-red"></span>
+                  <span class="window-dot dot-yellow"></span>
+                  <span class="window-dot dot-green"></span>
+                </div>
+                <div class="window-title">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  engineer-profile.ts
+                </div>
+              </div>
+              <div class="code-body">
+                <span class="code-line"><span class="token-keyword">interface</span> <span class="token-variable">SoftwareArchitect</span> {</span>
+                <span class="code-line">&nbsp;&nbsp;<span class="token-property">name</span>: <span class="token-string">"Muhammad Imran Rasheed"</span>;</span>
+                <span class="code-line">&nbsp;&nbsp;<span class="token-property">email</span>: <span class="token-string">"imranrasheedt@gmail.com"</span>;</span>
+                <span class="code-line">&nbsp;&nbsp;<span class="token-property">coreExpertise</span>: [</span>
+                <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token-string">"Full-Stack Engineering"</span>,</span>
+                <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token-string">"Distributed Cloud Architectures"</span>,</span>
+                <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token-string">"High-Converting Luxury UI/UX"</span></span>
+                <span class="code-line">&nbsp;&nbsp;];</span>
+                <span class="code-line">&nbsp;&nbsp;<span class="token-property">standards</span>: {</span>
+                <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token-property">cleanCode</span>: <span class="token-boolean">true</span>,</span>
+                <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token-property">performanceScore</span>: <span class="token-string">"100/100"</span>,</span>
+                <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="token-property">clientFocused</span>: <span class="token-boolean">true</span></span>
+                <span class="code-line">&nbsp;&nbsp;};</span>
+                <span class="code-line">&nbsp;&nbsp;<span class="token-property">status</span>: <span class="token-string">"Ready to Deploy"</span>;</span>
+                <span class="code-line">}</span>
+                <span class="code-line"><span class="token-comment">// Delivering unparalleled digital craftsmanship</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ABOUT ME SECTION
+         ======================================================================== -->
+    <section class="section-spacing about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>Who I Am</span>
+          </div>
+          <h2 class="section-title">About <span class="gold-text">Me</span></h2>
+          <p class="section-subtitle">
+            A developer who bridges technical precision and luxury design to deliver digital products that stand apart from the ordinary.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Monogram Card / Personal Profile Frame -->
+          <div class="about-image-card">
+            <div class="portrait-frame">
+              <div class="portrait-inner">
+                <div class="monogram-avatar">
+                  <span>IR</span>
+                </div>
+                <h3 class="portrait-name">Muhammad Imran Rasheed</h3>
+                <p class="portrait-role">Full-Stack Engineer & Consultant</p>
+
+                <div class="portrait-details-list">
+                  <div class="portrait-detail-item">
+                    <span class="detail-label">Direct Email</span>
+                    <span class="detail-value" style="color: var(--gold-light);">imranrasheedt@gmail.com</span>
+                  </div>
+                  <div class="portrait-detail-item">
+                    <span class="detail-label">Availability</span>
+                    <span class="detail-value" style="color: #34D399;">● Worldwide Remote</span>
+                  </div>
+                  <div class="portrait-detail-item">
+                    <span class="detail-label">Experience</span>
+                    <span class="detail-value">5+ Years Industry Experience</span>
+                  </div>
+                  <div class="portrait-detail-item">
+                    <span class="detail-label">Commitment</span>
+                    <span class="detail-value">On-Time & Pixel-Perfect</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Narrative & Value Pillars -->
+          <div class="about-text-content">
+            <h3>Turning Visionary Concepts into <span class="gold-text">High-Performance Reality</span></h3>
+            <p class="about-bio">
+              I am <strong>Muhammad Imran Rasheed</strong>, a dedicated software engineer and digital builder. My philosophy is rooted in creating software that is not only visually captivating, but also structurally immaculate, fast, and engineered to support business growth.
+            </p>
+            <p class="about-bio">
+              Over the course of my career, I have engineered full-scale SaaS platforms, high-speed single page applications, robust API backends, and responsive luxury web portals. I obsess over clean architecture, developer ergonomics, security, and delightful user experiences.
+            </p>
+
+            <!-- 4 Pillars Grid -->
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <h4 class="pillar-title">Clean Architecture</h4>
+                <p class="pillar-desc">Modular, self-documenting codebases built with scalability and maintainability as top priorities.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <h4 class="pillar-title">Performance-First</h4>
+                <p class="pillar-desc">Lightning-quick load speeds, optimal Core Web Vitals, and efficient asset delivery.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                  </svg>
+                </div>
+                <h4 class="pillar-title">Luxury Aesthetics</h4>
+                <p class="pillar-desc">Sophisticated typography, balanced proportions, and dark/golden UI themes that exude authority.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h4 class="pillar-title">Collaborative Spirit</h4>
+                <p class="pillar-desc">Transparent communication, proactive updates, and end-to-end commitment to your vision.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SERVICES SECTION
+         ======================================================================== -->
+    <section class="section-spacing services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>What I Deliver</span>
+          </div>
+          <h2 class="section-title">My <span class="gold-text">Services</span></h2>
+          <p class="section-subtitle">
+            Bespoke engineering solutions customized to scale your business, delight your users, and outshine your competition.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Full-Stack Web Development -->
+          <div class="glass-card service-card">
+            <div class="service-top">
+              <div class="service-number">01 / CAPABILITY</div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="service-title">Full-Stack Web Development</h3>
+              <p class="service-description">
+                End-to-end development of dynamic, robust web applications using contemporary frameworks like React, Next.js, Node.js, and modern TypeScript.
+              </p>
+            </div>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Custom SaaS & Web Applications</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Server-Side Rendering (SSR) & SSG</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Type-Safe, Clean Codebases</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: UI/UX & Front-End Engineering -->
+          <div class="glass-card service-card">
+            <div class="service-top">
+              <div class="service-number">02 / CAPABILITY</div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                  <path d="M3 9h18"></path>
+                  <path d="M9 21V9"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">UI/UX & Front-End Engineering</h3>
+              <p class="service-description">
+                Transforming Figma designs into interactive, accessible, and ultra-smooth web applications. Crafted with micro-interactions and dark luxury aesthetic.
+              </p>
+            </div>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Responsive & Mobile-First Layouts</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Fluid CSS & GPU-Accelerated Animations</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Component Design Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Backend & API Architecture -->
+          <div class="glass-card service-card">
+            <div class="service-top">
+              <div class="service-number">03 / CAPABILITY</div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Backend & API Architecture</h3>
+              <p class="service-description">
+                Building resilient REST and GraphQL APIs, microservices, and database models that ensure real-time response times, security, and uptime.
+              </p>
+            </div>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>RESTful & GraphQL API Design</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>PostgreSQL, MySQL & MongoDB</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>OAuth, JWT & Role-Based Auth</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: Performance & SEO Optimization -->
+          <div class="glass-card service-card">
+            <div class="service-top">
+              <div class="service-number">04 / CAPABILITY</div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Performance & SEO Optimization</h3>
+              <p class="service-description">
+                Auditing and supercharging web applications to achieve 95+ Google Lighthouse scores, instant page transitions, and top-tier search rankings.
+              </p>
+            </div>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Core Web Vitals Optimization</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Asset Compression & Smart Caching</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Semantic Structured Data & Meta SEO</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5: Cloud Deployment & DevOps -->
+          <div class="glass-card service-card">
+            <div class="service-top">
+              <div class="service-number">05 / CAPABILITY</div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Cloud Deployment & DevOps</h3>
+              <p class="service-description">
+                Streamlining deployment workflows with Docker containerization, AWS cloud setups, automated CI/CD pipelines, and zero-downtime releases.
+              </p>
+            </div>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Docker & Containerized Environments</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>AWS, Vercel & DigitalOcean Setups</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Automated GitHub Actions CI/CD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6: E-Commerce & SaaS Engineering -->
+          <div class="glass-card service-card">
+            <div class="service-top">
+              <div class="service-number">06 / CAPABILITY</div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="8" cy="21" r="1"></circle>
+                  <circle cx="19" cy="21" r="1"></circle>
+                  <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">E-Commerce & SaaS Engineering</h3>
+              <p class="service-description">
+                Building scalable online storefronts, recurring subscription payment portals, multi-tenant dashboards, and administrative back-offices.
+              </p>
+            </div>
+            <div class="service-features">
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Stripe & Payment Gateway Integration</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Subscription Lifecycle & Webhooks</span>
+              </div>
+              <div class="service-feature-item">
+                <span class="feature-check">✦</span>
+                <span>Real-Time Analytics & Reporting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SKILLS & TECH STACK SECTION
+         ======================================================================== -->
+    <section class="section-spacing skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>Technical Proficiency</span>
+          </div>
+          <h2 class="section-title">My <span class="gold-text">Skills</span> & Expertise</h2>
+          <p class="section-subtitle">
+            A comprehensive overview of the modern technologies, languages, and architectures I leverage to produce enterprise-grade applications.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="skills-filter-container">
+          <button class="filter-btn active" data-filter="all">All Domains</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend & DB</button>
+          <button class="filter-btn" data-filter="cloud">DevOps & Cloud</button>
+          <button class="filter-btn" data-filter="architecture">Architecture</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid">
+          <!-- Card 1: Frontend -->
+          <div class="glass-card skill-category-card" data-category="frontend">
+            <div class="category-card-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                  <line x1="8" x2="16" y1="21" y2="21"></line>
+                  <line x1="12" x2="12" y1="17" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Frontend Mastery</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">React.js & Next.js</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">TypeScript / Modern JS (ES6+)</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Tailwind CSS & CSS Modules</span>
+                  <span class="skill-percentage">96%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 96%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">HTML5 & Web Accessibility (a11y)</span>
+                  <span class="skill-percentage">98%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 98%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Redux Toolkit / Zustand</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend & DB -->
+          <div class="glass-card skill-category-card" data-category="backend">
+            <div class="category-card-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+                  <rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+                  <line x1="6" x2="6.01" y1="6" y2="6"></line>
+                  <line x1="6" x2="6.01" y1="18" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Backend & Data</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Node.js & Express</span>
+                  <span class="skill-percentage">94%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 94%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">PostgreSQL & SQL Modeling</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">MongoDB & Mongoose</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">RESTful & GraphQL APIs</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Redis Caching & Message Queues</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Cloud & DevOps -->
+          <div class="glass-card skill-category-card" data-category="cloud">
+            <div class="category-card-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                  <path d="M12 12v9"></path>
+                  <path d="m8 17 4 4 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">DevOps & Cloud</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Docker & Containerization</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Git & GitHub CI/CD Workflows</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">AWS Cloud (S3, EC2, Lambda)</span>
+                  <span class="skill-percentage">84%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 84%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Vercel & Netlify Deployments</span>
+                  <span class="skill-percentage">96%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 96%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Linux Server Administration</span>
+                  <span class="skill-percentage">86%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 86%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Architecture -->
+          <div class="glass-card skill-category-card" data-category="architecture">
+            <div class="category-card-header">
+              <div class="category-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="category-title">Architecture</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">System Design & Patterns</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Unit & Integration Testing (Jest)</span>
+                  <span class="skill-percentage">86%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 86%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Microservices & Decoupling</span>
+                  <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Figma Prototyping & Specs</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-top">
+                  <span class="skill-name">Agile & Sprint Leadership</span>
+                  <span class="skill-percentage">94%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress" style="width: 94%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Shelf / Interactive Badges -->
+        <div class="tech-pills-shelf">
+          <div class="shelf-heading">✦ Comprehensive Tech Stack At A Glance ✦</div>
+          <div class="tech-badges-wrapper">
+            <span class="tech-badge">React 19</span>
+            <span class="tech-badge">Next.js 15</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">Redis</span>
+            <span class="tech-badge">Tailwind CSS</span>
+            <span class="tech-badge">GraphQL</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">AWS</span>
+            <span class="tech-badge">Git & GitHub</span>
+            <span class="tech-badge">Stripe API</span>
+            <span class="tech-badge">REST Architecture</span>
+            <span class="tech-badge">Vercel</span>
+            <span class="tech-badge">Jest & Vitest</span>
+            <span class="tech-badge">Figma</span>
+            <span class="tech-badge">CI/CD Pipelines</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FEATURED PROJECTS SECTION
+         ======================================================================== -->
+    <section class="section-spacing projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>Selected Case Studies</span>
+          </div>
+          <h2 class="section-title">Featured <span class="gold-text">Work</span></h2>
+          <p class="section-subtitle">
+            A showcase of enterprise SaaS products, modern web platforms, and tailored high-performance architectures.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-thumbnail">
+              <div class="project-canvas-preview">
+                <div class="canvas-top-bar">
+                  <span class="canvas-badge">AURAFIN // FINTECH</span>
+                  <div class="window-dots">
+                    <span class="window-dot dot-red" style="width:8px;height:8px;"></span>
+                    <span class="window-dot dot-yellow" style="width:8px;height:8px;"></span>
+                    <span class="window-dot dot-green" style="width:8px;height:8px;"></span>
+                  </div>
+                </div>
+                <div class="canvas-mock-ui">
+                  <div class="mock-sidebar"></div>
+                  <div class="mock-main">
+                    <div class="mock-chart-line"></div>
+                    <div class="mock-row" style="width:85%;"></div>
+                    <div class="mock-row" style="width:65%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">FinTech & Asset Management</div>
+              <h3 class="project-title">AuraFin - AI Wealth & Analytics Suite</h3>
+              <p class="project-desc">
+                An institutional-grade portfolio intelligence dashboard built for real-time asset tracking, predictive financial analytics, and automated tax reporting with sub-second data streaming.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js 15</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="project-link-btn">
+                  <span>View Case Study</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-thumbnail">
+              <div class="project-canvas-preview">
+                <div class="canvas-top-bar">
+                  <span class="canvas-badge">LUXEMART // E-COMMERCE</span>
+                  <div class="window-dots">
+                    <span class="window-dot dot-red" style="width:8px;height:8px;"></span>
+                    <span class="window-dot dot-yellow" style="width:8px;height:8px;"></span>
+                    <span class="window-dot dot-green" style="width:8px;height:8px;"></span>
+                  </div>
+                </div>
+                <div class="canvas-mock-ui">
+                  <div class="mock-sidebar" style="width:35%;"></div>
+                  <div class="mock-main" style="width:65%;">
+                    <div class="mock-chart-line" style="height:30px;"></div>
+                    <div class="mock-row" style="width:90%;"></div>
+                    <div class="mock-row" style="width:50%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Luxury Commerce & Payments</div>
+              <h3 class="project-title">LuxeMart - High-End Boutique Portal</h3>
+              <p class="project-desc">
+                A bespoke headless e-commerce experience featuring 60FPS fluid transitions, localized currency conversion, custom Stripe subscription flows, and inventory automation.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">GraphQL</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Stripe API</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="project-link-btn">
+                  <span>View Case Study</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-thumbnail">
+              <div class="project-canvas-preview">
+                <div class="canvas-top-bar">
+                  <span class="canvas-badge">NEXUS // ENTERPRISE SAAS</span>
+                  <div class="window-dots">
+                    <span class="window-dot dot-red" style="width:8px;height:8px;"></span>
+                    <span class="window-dot dot-yellow" style="width:8px;height:8px;"></span>
+                    <span class="window-dot dot-green" style="width:8px;height:8px;"></span>
+                  </div>
+                </div>
+                <div class="canvas-mock-ui">
+                  <div class="mock-sidebar"></div>
+                  <div class="mock-main">
+                    <div class="mock-chart-line"></div>
+                    <div class="mock-row" style="width:75%;"></div>
+                    <div class="mock-row" style="width:40%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Cloud Workflow & Collaboration</div>
+              <h3 class="project-title">Nexus Cloud - Workflow Automation Engine</h3>
+              <p class="project-desc">
+                An event-driven orchestration tool enabling cross-team automation, visual pipeline builders, granular permission schemes, and automated webhook triggers.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">AWS</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="project-link-btn">
+                  <span>View Case Study</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-thumbnail">
+              <div class="project-canvas-preview">
+                <div class="canvas-top-bar">
+                  <span class="canvas-badge">APEX // LUXURY REAL ESTATE</span>
+                  <div class="window-dots">
+                    <span class="window-dot dot-red" style="width:8px;height:8px;"></span>
+                    <span class="window-dot dot-yellow" style="width:8px;height:8px;"></span>
+                    <span class="window-dot dot-green" style="width:8px;height:8px;"></span>
+                  </div>
+                </div>
+                <div class="canvas-mock-ui">
+                  <div class="mock-sidebar" style="width:30%;"></div>
+                  <div class="mock-main" style="width:70%;">
+                    <div class="mock-chart-line" style="height:35px;"></div>
+                    <div class="mock-row" style="width:80%;"></div>
+                    <div class="mock-row" style="width:60%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Interactive Geo & Real Estate</div>
+              <h3 class="project-title">Apex Estates - Prime Property Marketplace</h3>
+              <p class="project-desc">
+                An ultra-luxury property acquisition platform featuring 3D virtual walkthroughs, custom GIS map filtering, instant agent messaging, and automated valuation estimates.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Mapbox GL</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">Tailwind</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" class="project-link-btn">
+                  <span>View Case Study</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         WORK PROCESS SECTION
+         ======================================================================== -->
+    <section class="section-spacing process-section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>How I Execute</span>
+          </div>
+          <h2 class="section-title">My Proven <span class="gold-text">Workflow</span></h2>
+          <p class="section-subtitle">
+            A disciplined, transparent, and agile methodology that turns raw requirements into polished, dependable digital products.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step-num">01</div>
+            <h3 class="process-title">Discovery & Strategy</h3>
+            <p class="process-text">
+              Deep-diving into project requirements, defining business goals, mapping user journeys, and choosing the optimal technological stack.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">02</div>
+            <h3 class="process-title">Architecture & Design</h3>
+            <p class="process-text">
+              Designing scalable system schemas, data flows, and interactive UI wireframes with pixel-level precision and gold-standard aesthetics.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">03</div>
+            <h3 class="process-title">Agile Development</h3>
+            <p class="process-text">
+              Writing clean, modular code with continuous integration, automated unit testing, and transparent progress updates throughout.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">04</div>
+            <h3 class="process-title">Deployment & Launch</h3>
+            <p class="process-text">
+              Rigorous cross-browser stress testing, SEO configuration, cloud deployment, and seamless post-launch support and optimization.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CONTACT SECTION
+         ======================================================================== -->
+    <section class="section-spacing contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <span class="dot"></span>
+            <span>Initiate Collaboration</span>
+          </div>
+          <h2 class="section-title">Get In <span class="gold-text">Touch</span></h2>
+          <p class="section-subtitle">
+            Have an exciting project, architectural challenge, or role in mind? Let's discuss how we can create something exceptional together.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Direct Contact Details -->
+          <div class="contact-info-panel">
+            <!-- Email Highlight Card -->
+            <div class="contact-highlight-card">
+              <span class="highlight-badge">Official Direct Inquiries</span>
+              <h3 class="highlight-title">Direct Communication</h3>
+              <p class="highlight-desc">
+                For contract inquiries, freelance engagements, or full-time opportunities, reach out directly to my primary email inbox:
+              </p>
+
+              <div class="email-box-container">
+                <div class="email-display-row">
+                  <span class="email-address">imranrasheedt@gmail.com</span>
+                  <button class="copy-btn" data-copy-email aria-label="Copy Imran's Email">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                      <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                    </svg>
+                    <span>Copy</span>
+                  </button>
+                </div>
+
+                <a href="mailto:imranrasheedt@gmail.com" class="btn btn-primary send-direct-btn">
+                  <span>Send Direct Email Now</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" x2="11" y1="2" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Metadata Items -->
+            <div class="contact-meta-cards">
+              <div class="meta-card-item">
+                <div class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="meta-text-title">Response Time</div>
+                  <div class="meta-text-val">Guaranteed within 24 Hours</div>
+                </div>
+              </div>
+
+              <div class="meta-card-item">
+                <div class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="meta-text-title">Location & Availability</div>
+                  <div class="meta-text-val">Worldwide Remote & Relocation Flexible</div>
+                </div>
+              </div>
+
+              <div class="meta-card-item">
+                <div class="meta-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="meta-text-title">Project Engagement</div>
+                  <div class="meta-text-val">Fixed-Price Contracts, Hourly & Full-Time</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="contact-form-panel">
+            <div class="form-header">
+              <h3 class="form-title">Send A Message</h3>
+              <p class="form-subtitle">Fill in the parameters below and I will get back to you promptly.</p>
+            </div>
+
+            <div id="formStatusMsg" class="form-status-msg"></div>
+
+            <form id="portfolioContactForm" class="contact-form">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="formName" class="form-label">Your Name *</label>
+                  <input type="text" id="formName" name="name" class="form-input" placeholder="e.g. Alexander Vance" required>
+                </div>
+                <div class="form-group">
+                  <label for="formEmail" class="form-label">Your Email *</label>
+                  <input type="email" id="formEmail" name="email" class="form-input" placeholder="e.g. alexander@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="formService" class="form-label">Service of Interest</label>
+                <select id="formService" name="service" class="form-select">
+                  <option value="Full-Stack Web Development">Full-Stack Web Development</option>
+                  <option value="Front-End Engineering & UI/UX">Front-End Engineering & UI/UX</option>
+                  <option value="Backend Architecture & APIs">Backend Architecture & APIs</option>
+                  <option value="Cloud Deployment & DevOps">Cloud Deployment & DevOps</option>
+                  <option value="Performance & SEO Optimization">Performance & SEO Optimization</option>
+                  <option value="Other Project Inquiries">Other Project Inquiries</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">Project Details / Message *</label>
+                <textarea id="formMessage" name="message" class="form-textarea" placeholder="Describe your project, timeline, and goals..." required></textarea>
+              </div>
+
+              <button type="submit" id="formSubmitBtn" class="btn btn-primary" style="width: 100%;">
+                <span>Transmit Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" x2="11" y1="2" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <div class="brand-crest">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 8L88 28V72L50 92L12 72V28L50 8Z" stroke="url(#footGold)" stroke-width="4"/>
+                <text x="50" y="62" font-family="'Cinzel', serif" font-size="34" font-weight="700" fill="url(#footGold)" text-anchor="middle">IR</text>
+                <defs>
+                  <linearGradient id="footGold" x1="0" y1="0" x2="100" y2="100">
+                    <stop offset="0%" stop-color="#FFF3B0"/>
+                    <stop offset="50%" stop-color="#D4AF37"/>
+                    <stop offset="100%" stop-color="#8C6514"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="brand-name">
+              <span class="brand-title">Muhammad Imran Rasheed</span>
+              <span class="brand-sub">Crafting Digital Excellence</span>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Specialized in resilient architectures, high-performance web applications, and luxury digital design.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#services" class="footer-link">Services</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="mailto:imranrasheedt@gmail.com" class="social-icon-btn" title="Email Imran">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 <strong>Muhammad Imran Rasheed</strong>. All rights reserved. Built with black & gold excellence.
+        </div>
+        <a href="#home" class="back-to-top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
