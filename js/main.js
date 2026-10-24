@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initCardTilt();
   initBackToTop();
+  initLightbox();
 });
 
 /* --------------------------------------------------------------------------
@@ -487,6 +488,54 @@ function initBackToTop() {
       });
     });
   }
+}
+
+/* --------------------------------------------------------------------------
+   10. GALLERY LIGHTBOX MODAL
+   -------------------------------------------------------------------------- */
+function initLightbox() {
+  const modal = document.getElementById('lightboxModal');
+  const modalImg = document.getElementById('lightboxImg');
+  const modalCaption = document.getElementById('lightboxCaption');
+  const closeBtn = document.getElementById('lightboxClose');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  if (!modal || !modalImg) return;
+
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const fullSrc = item.getAttribute('data-full');
+      const caption = item.getAttribute('data-caption') || '';
+      modalImg.src = fullSrc;
+      modalCaption.textContent = caption;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      modalImg.src = '';
+    }, 200);
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
 }
 
 // Inline animation keyframe helper
